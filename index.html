@@ -1,0 +1,65 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <link rel="stylesheet" href="styles.css">
+        <title>Pickets</title>
+    </head>
+    <body>
+        <div>
+            <h1>Pickets</h1>
+            <h2>i will find you plane tickets Fast And Cheap.</h2>
+            <td>
+            <table style="width:100%">
+                </div>
+                <br>
+                Solves plane ticket purchasing.
+                <br>
+                Everyone can use it.
+                </p>
+        <table style="width:100%; background-color: lightblue;">
+  <tr>
+	   <th>Company</th>
+	   <th>Time</th>
+	   <th>Length</th>
+	   <th>Price</th>
+	   <th>Location</th>
+  </tr>
+  <tr>
+        <td><img src="https://www.gstatic.com/flights/airline_logos/70px/FR.png" width="100" height="100">
+		<td>21:20-23:10</td>
+		<td>2h 50min</td>
+		<td id="add-to-cart" onclick="update();">36€<img id="image-cart" class="cart" src="https://www.gstatic.com/flights/airline_logos/70px/FR.png"></img><p id="cart-message" onclick="update () ;"></p></td>
+		<td>Germany, Berlin</td>
+  </tr>
+  <tr>
+		<td><img src="https://www.gstatic.com/flights/airline_logos/70px/LO.png" width="100" height="100">
+		<td>06:00–09:45</td>
+		<td>4h 45min + 1 plane switch</td>
+		<td id="add-to-cart2" onclick="update2();">165€<img id="image-cart2" class="cart" src="https://www.gstatic.com/flights/airline_logos/70px/FR.png"></img><p id="cart-message2" onclick="update2 () ;"></p></td>
+		<td>Italy, Rome</td>
+  </tr>
+  <tr>
+		<td><img src="https://www.gstatic.com/flights/airline_logos/70px/SK.png" width="100" height="100">
+		<td>06:25-10.30</td>
+		<td>5h 5min + 1 plane switch</td>
+		<td id="add-to-cart3" onclick="update3();">172€<img id="image-cart3" class="cart" src="cart.png"></img><p id="cart-message3" onclick="update3 () ;"></p></td>
+		<td>England, London</td>
+   </tr>
+            <button>Go to checkout!</button>
+    </table>
+		<script>
+		function update()	{
+			document.getElementById('cart-message').innerHTML='Added to cart!';
+            document.getElementById('image-cart').src = "https://www.gstatic.com/flights/airline_logos/70px/SK.png";
+        }
+        function update2() {
+            document.getElementById('cart-message2').innerHTML='Added to cart!';
+            document.getElementById('image-cart2').src = "https://www.gstatic.com/flights/airline_logos/70px/SK.png";
+        } 
+        function update3() {
+            document.getElementById('cart-message3').innerHTML='Added to cart!';
+            document.getElementById('image-cart3').src = "https://www.gstatic.com/flights/airline_logos/70px/SK.png";
+        }    
+		</script>
+</body>
+</html>
